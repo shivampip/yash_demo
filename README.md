@@ -54,3 +54,103 @@ const add = ({first_name, city}) => {
     return <p>I am {first_name} I live at {city}</p>;
 };
 ```
+
+# Styling
+
+-   Inline Style
+
+```
+<div style={{
+    color: "yellow",
+    backgrondColor: "red"
+}}>sdfsdfdsfsdf</div>
+```
+
+-   With CSS File
+
+```
+class => className
+```
+
+```
+import "./FileName.css"
+```
+
+### Callback Function
+
+-   Anonymous Callback Function (Arrow Function)
+
+```
+(num1, num2) => {
+    return num1 + num2;
+};
+```
+
+## React Hooks
+
+-   useState
+
+```
+const [data, setData]= useState("user")
+
+//Galat
+data= "Naman";
+
+//Sahi
+setData("Naman");
+```
+
+### Changing Dict value
+
+```
+const bike= {
+    company: "Hero",
+    color: "black",
+    model: "VS4"
+}
+
+const newValue= {
+    ...bike,
+    color: "Blue"
+}
+
+const newValue= {
+    ...bike,
+    model: "VS5"
+}
+```
+
+-   For Array
+
+```
+const students= ["Shivam", "Yash", "Afjal", "Maithil"]
+
+const newStudents= [...students, "Sarik"]
+```
+
+#### Array of Dict
+
+```
+//Array
+const arr= [1,2,3];
+
+//Dict
+const dd= {a: 121, b: 343}
+
+//Array of dict
+const ad= [
+    {a: 121, b: 343},
+    {a: 121, b: 343}
+    {a: 121, b: 343}
+]
+
+ad[2].b
+```
+
+### Map function
+
+```
+arr.map((item) => {
+    return <Element prosdfsdlfsdfsdf />
+})
+```
