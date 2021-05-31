@@ -2,6 +2,16 @@
 
 Yash
 
+## TODO:
+
+-   Create blank react app
+-   App
+    -   Header
+    -   Add New Blog Button
+    -   BlogPosts (array)
+        -   LikeButton (working) (like count)
+    -   Footer
+
 ## Linux
 
 -   ls
