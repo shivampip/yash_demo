@@ -12,6 +12,31 @@ Yash
         -   LikeButton (working) (like count)
     -   Footer
 
+## Github
+
+-   Remote- Github Server
+-   Local- Apna computer
+
+*   Clone (copy) from Remote to Local
+
+```
+git clone <github-url>
+```
+
+-   Local to Remote (Push)
+
+```
+git add .
+git commit -m "apna message"
+git push origin main
+```
+
+-   Remote to Local (Pull)
+
+```
+git pull origin main
+```
+
 ## Linux
 
 -   ls
