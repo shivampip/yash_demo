@@ -8,6 +8,8 @@ import Card from "./Card";
 import BlogPost from "./BlogPost";
 import BlogWithCSS from "./BlogWithCSS";
 
+import DynamicBlog from "./DynamicBlog";
+
 const App = () => {
     const name = "Rakesh";
     const [posts, setPosts] = useState([
@@ -23,7 +25,9 @@ const App = () => {
 
     return (
         <div>
-            <button
+            <DynamicBlog />
+
+            {/* <button
                 onClick={(e) => {
                     // alert("Working...");
                     const newPosts = [
@@ -38,13 +42,13 @@ const App = () => {
                 }}
             >
                 Add New Blog
-            </button>
-            {posts.map((item) => {
+            </button> */}
+            {/* {posts.map((item) => {
                 console.log("Now printing " + item.heading);
                 return (
                     <BlogPost heading={item.heading} content={item.content} />
                 );
-            })}
+            })} */}
 
             {/* <BlogPost heading="I am Heading" content="I am content" />
             <BlogPost heading="I am Heading 2" content="I am content 2" /> */}

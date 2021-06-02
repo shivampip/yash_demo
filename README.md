@@ -12,6 +12,48 @@ Yash
         -   LikeButton (working) (like count)
     -   Footer
 
+### API
+
+-   URL (https://google.com)
+-   Request Type (GET, POST, PUT)
+-   Request Body (parameter sending to server) (optional)
+
+-   Response (jo server send to client)
+-   JSON {"frist_name": "Yash", "last_name": "Sahu"}
+
+### useEffect Hook
+
+-   Heavy operation in background
+
+```
+useEffect(anonymous callback function, [])
+```
+
+-   Example
+
+```
+useEffect(() => {
+    return num1 + num2;
+}, [])
+```
+
+### Ternary
+
+```
+condirtion? <true case>: <false case>
+```
+
+### Binary
+
+```
+condition && <Component/>
+```
+
+### API Call from React
+
+-   Fetch
+-   Axios (recommand)
+
 ## Github
 
 -   Remote- Github Server
