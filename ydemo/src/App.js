@@ -10,22 +10,18 @@ import BlogWithCSS from "./BlogWithCSS";
 
 import DynamicBlog from "./DynamicBlog";
 
-const App = () => {
-    const name = "Rakesh";
-    const [posts, setPosts] = useState([
-        {
-            heading: "Google",
-            content: "Search Engine",
-        },
-        {
-            heading: "Facebook",
-            content: "Social Network",
-        },
-    ]);
+import Bitcoin from "./Bitcoin";
 
+import DogAPI from "./DogAPI";
+import JokeAPI from "./apis/JokeAPI";
+
+const App = () => {
     return (
         <div>
-            <DynamicBlog />
+            <JokeAPI />
+            {/* <Bitcoin /> */}
+            {/* <DogAPI /> */}
+            {/* <DynamicBlog /> */}
 
             {/* <button
                 onClick={(e) => {

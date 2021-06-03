@@ -37,6 +37,9 @@ useEffect(() => {
 }, [])
 ```
 
+-   Second parameter: Array
+-   Dependency parameter
+
 ### Ternary
 
 ```
