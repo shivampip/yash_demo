@@ -15,10 +15,16 @@ import Bitcoin from "./Bitcoin";
 import DogAPI from "./DogAPI";
 import JokeAPI from "./apis/JokeAPI";
 
+import PublicAPI from "./apis/PublicAPI";
+
+import RandomUserAPI from "./apis/RandomUserAPI";
+
 const App = () => {
     return (
         <div>
-            <JokeAPI />
+            <RandomUserAPI />
+            {/* <PublicAPI /> */}
+            {/* <JokeAPI /> */}
             {/* <Bitcoin /> */}
             {/* <DogAPI /> */}
             {/* <DynamicBlog /> */}
