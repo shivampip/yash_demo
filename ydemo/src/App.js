@@ -18,11 +18,25 @@ import JokeAPI from "./apis/JokeAPI";
 import PublicAPI from "./apis/PublicAPI";
 
 import RandomUserAPI from "./apis/RandomUserAPI";
+import HelloUser from "./HelloUser";
+
+import GenderAPI from "./apis/GenderAPI";
+
+import UserInfo from "./UserInfo";
+
+import AgeAPI from "./apis/AgeAPI";
+
+import HelloClass from "./HelloClass";
 
 const App = () => {
     return (
         <div>
-            <RandomUserAPI />
+            <HelloClass city="Mumbai" />
+            {/* <AgeAPI /> */}
+            {/* <UserInfo /> */}
+            {/* <GenderAPI /> */}
+            {/* <HelloUser /> */}
+            {/* <RandomUserAPI /> */}
             {/* <PublicAPI /> */}
             {/* <JokeAPI /> */}
             {/* <Bitcoin /> */}

@@ -12,6 +12,14 @@ Yash
         -   LikeButton (working) (like count)
     -   Footer
 
+### User Input
+
+* Uncontrolled
+* Controlled- state and input are in sync
+  * Create state for input
+  * set input value
+  * Update state on onChange
+
 ### API
 
 -   URL (https://google.com)

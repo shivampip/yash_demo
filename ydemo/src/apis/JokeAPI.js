@@ -1,14 +1,43 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-const API_URL = "https://official-joke-api.appspot.com/random_joke";
+const API_URL = "http://test-magazine.qureal.com/members/login";
 
 const DogAPI = () => {
     const [res, setRes] = useState(null);
+    const [loading, setLoading] = useState(false);
 
     useEffect(() => {
+        setLoading(true);
+
+        // fetch(API_URL, {
+        //     method: "POST", // or 'PUT'
+        //     headers: {
+        //         "Content-Type": "application/json",
+        //     },
+        //     body: JSON.stringify({
+        //         email: "hello@gmail.com",
+        //         password: "hello123",
+        //     }),
+        // })
+        //     .then((response) => {
+        //         console.log("Currently in first then (raw response)");
+        //         return response.json();
+        //     })
+        //     .then((data) => {
+        //         console.log("Sucdess response");
+        //         console.log("Success:", data);
+        //     })
+        //     .catch((error) => {
+        //         console.log("Errorsdfsdfd response");
+        //         console.error("Error:", error);
+        //     });
+
         axios
-            .get(API_URL)
+            .post(API_URL, {
+                email: "hello@gmail.com",
+                password: "hello123",
+            })
             .then((response) => {
                 console.log("Response Received");
                 console.log(response.data);
@@ -16,24 +45,30 @@ const DogAPI = () => {
             })
             .catch((error) => {
                 console.log("Error aa gyi");
-                console.log(error);
+                console.log(error.response.data);
             })
             .then(() => {
                 console.log("Request Finished");
+                setLoading(false);
             });
     }, []);
 
     return (
         <div>
             <h2>JOKE</h2>
-            {res !== null && (
+            {/* {loading && <h1>Loading......</h1>} */}
+            {res !== null ? (
                 <div>
-                    <h3>{res.punchline}</h3>
-                    <p>{res.setup}</p>
+                    <h2>{res.message}</h2>
                 </div>
+            ) : (
+                <h2>Loading...</h2>
             )}
         </div>
     );
 };
 
 export default DogAPI;
+
+//Cookies
+//Token
