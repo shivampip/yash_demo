@@ -1,244 +1,185 @@
-# yash_demo
+# Client Server Architecture
 
-Yash
+SERver= computer
 
-## TODO:
+Localhost: 
 
--   Create blank react app
--   App
-    -   Header
-    -   Add New Blog Button
-    -   BlogPosts (array)
-        -   LikeButton (working) (like count)
-    -   Footer
+Internet
 
-### User Input
+IP: 45.234.34.2
 
-* Uncontrolled
-* Controlled- state and input are in sync
-  * Create state for input
-  * set input value
-  * Update state on onChange
+www.yashsahu.com
 
-### API
+yout comp. => 34.56.101.23
 
--   URL (https://google.com)
--   Request Type (GET, POST, PUT)
--   Request Body (parameter sending to server) (optional)
+DNS=Donmain Name Server
 
--   Response (jo server send to client)
--   JSON {"frist_name": "Yash", "last_name": "Sahu"}
+Domain        IP
 
-### useEffect Hook
+yashsahu.com   34.34.32.23
 
--   Heavy operation in background
+shivam.com      wr.w.we.r34
 
-```
-useEffect(anonymous callback function, [])
-```
+{
 
--   Example
+card_no: "232 23 23 21312 3",
 
-```
-useEffect(() => {
-    return num1 + num2;
-}, [])
-```
+cvv: "456"
 
--   Second parameter: Array
--   Dependency parameter
-
-### Ternary
-
-```
-condirtion? <true case>: <false case>
-```
-
-### Binary
-
-```
-condition && <Component/>
-```
-
-### API Call from React
-
--   Fetch
--   Axios (recommand)
-
-## Github
-
--   Remote- Github Server
--   Local- Apna computer
-
-*   Clone (copy) from Remote to Local
-
-```
-git clone <github-url>
-```
-
--   Local to Remote (Push)
-
-```
-git add .
-git commit -m "apna message"
-git push origin main
-```
-
--   Remote to Local (Pull)
-
-```
-git pull origin main
-```
-
-## Linux
-
--   ls
--   cd <folder>
--   cd ..
--   . => current dir
--   .. => parent dir
--   ../.. => grand parent
--   ./child => child
-
-## React
-
--   develpoed by FB
--   Open source
--   Virtual DOM
-
-### JSX
-
--   Javascript XML
--   HTML in JS
-
-### JS in HTML
-
-```
-<div>{JS Code}</div>
-```
-
-#### Create New app
-
-```
-npx create-react-app ydemo
-```
-
-### Arrow function
-
-```
-const add = (num1, num2) => {
-    return num1 + num2;
-};
-```
-
-## Communication
-
-### Parent to Child
-
--   Props
-
-```
-const add = ({first_name, city}) => {
-    return <p>I am {first_name} I live at {city}</p>;
-};
-```
-
-# Styling
-
--   Inline Style
-
-```
-<div style={{
-    color: "yellow",
-    backgrondColor: "red"
-}}>sdfsdfdsfsdf</div>
-```
-
--   With CSS File
-
-```
-class => className
-```
-
-```
-import "./FileName.css"
-```
-
-### Callback Function
-
--   Anonymous Callback Function (Arrow Function)
-
-```
-(num1, num2) => {
-    return num1 + num2;
-};
-```
-
-## React Hooks
-
--   useState
-
-```
-const [data, setData]= useState("user")
-
-//Galat
-data= "Naman";
-
-//Sahi
-setData("Naman");
-```
-
-### Changing Dict value
-
-```
-const bike= {
-    company: "Hero",
-    color: "black",
-    model: "VS4"
 }
 
-const newValue= {
-    ...bike,
-    color: "Blue"
+Packet Snipfing
+
+HTTP: No trasport layer secritye
+
+HTTPS: yash1234 => s#cR3v4
+
+
+
+## Server
+
+A computer
+
+IP:PORT 
+
+23.45.654.2:450
+
+23.45.654.2:451
+
+
+
+### Request Methods
+
+CRUD: Create, Read, Update, Delete
+
+* GET:  (Read)
+  * Data in URL
+* POST:  Data manupulation: (Write, Update, Delte) 
+  * Hidden data
+  * Binary data
+* PUT/PETCH: Update
+* DELTE: remove
+
+
+
+### Response Codes
+
+200: OK
+
+404: Not found
+
+
+
+### Connection with Server
+
+http/https- stateless
+
+* Request kari
+* Auth
+* Reqser
+* Ack.
+
+socket connection: (stateful)
+
+
+
+
+
+callServer
+
+PersonCloth
+
+pink-water
+
+
+
+#### Minify
+
+.wrapper{
+
+​    color: red;
+
+​    bg: yellow;
+
 }
 
-const newValue= {
-    ...bike,
-    model: "VS5"
-}
-```
 
--   For Array
 
-```
-const students= ["Shivam", "Yash", "Afjal", "Maithil"]
+.wrapper{color:red; bg:yellow;}
 
-const newStudents= [...students, "Sarik"]
-```
 
-#### Array of Dict
 
-```
-//Array
-const arr= [1,2,3];
+### iFrame
 
-//Dict
-const dd= {a: 121, b: 343}
+DDoS attack: '
 
-//Array of dict
-const ad= [
-    {a: 121, b: 343},
-    {a: 121, b: 343}
-    {a: 121, b: 343}
-]
+Server check: request origin
 
-ad[2].b
-```
+iFrame
 
-### Map function
+Ankit.com (yash.com)
 
-```
-arr.map((item) => {
-    return <Element prosdfsdlfsdfsdf />
-})
-```
+### SEO
+
+* Google: Page Rank Algo.
+* Web Crawler: 
+  * Domain:
+    * .gov.in
+    * .org
+    * .com
+    * .in
+    * .uk
+    * 
+
+* User: shivam agawal
+* Duration : 10s
+* Google: second highest bidding
+  * Cricket game online (keyword)
+  * Shivam: 2$
+  * ANkit:    5$
+  * * Top grade
+  * Yash:     12$
+    * Normal
+
+
+
+* yashsahu.com
+
+  * Home
+  * Aritcle
+  * About Me
+  * Contact
+  * Personal Diary
+
+  robot.txt
+
+  exclude "Psersonl Diary"
+
+
+
+
+
+* Load Balancer
+* yash.com
+* Amazon.com
+  * Cluster of servers
+
+
+
+
+
+* Most common OS for server: **Linux**
+
+* 
+
+#### SQL Injection
+
+username: input
+
+password: input
+
+SELECT * FROM USERSS WHERE username=yash; DELETE TABEL users; , password=yash123
+
+username: **yash; DELETE TABEL users;**
+
+if(username is valid or not)
